@@ -9,18 +9,14 @@
 </head>
 <body>
 <div class="container">
-  <div id="welcome-page" class="element-hidden">
+  <div id="welcome-page">
     <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
       <div class="panel panel-primary">
         <div class="panel-heading"><h3>Вход</h3></div>
         <div class="panel-body">
-          <div class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span>
-            К сожалению, этот ник уже занят, пожалуйста, выберите другой псевдоним.
-          </div>
+          <div id="error-place"></div>
           <div class="input-group">
-            <input id="nick-name" type="text" class="form-control" placeholder="Пожалуйста, введите ваш псевдоним..">
+            <input id="user-name" type="text" class="form-control" placeholder="Пожалуйста, введите ваш псевдоним..">
           <span class="input-group-btn">
             <button id="login" class="btn btn-default" type="button">Вход</button>
           </span>
@@ -29,7 +25,7 @@
       </div>
     </div>
   </div>
-  <div id="meeting-page">
+  <div id="meeting-page" class="element-hidden">
     <div class="panel panel-primary">
       <div class="panel-heading"><h3>Чат</h3></div>
       <div class="panel-body">
@@ -45,63 +41,11 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <ul id="user-list" class="list-group">
-              <li class="list-group-item">Alice</li>
-              <li class="list-group-item">Pinky</li>
-              <li class="list-group-item">Rainbowdash</li>
-              <li class="list-group-item">Bob</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
+
             </ul>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-            <div id="history">
-              <p class="message pull-left">
-                <span class="time pull-right">12:45:13</span>
-                <span class="marker">Alice</span>
-                <span class="text">Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Nunc nulla. Ut tincidunt tincidunt erat. Aenean imperdiet. Vivamus laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
-              </p>
-              <p class="message pull-left">
-                <span class="time pull-right">12:45:13</span>
-                <span class="marker">Alice</span>
-                <span class="text">Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Nunc nulla. Ut tincidunt tincidunt erat. Aenean imperdiet. Vivamus laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
-              </p>
-              <p class="message pull-right">
-                <span class="time pull-left">12:45:13</span>
-                <span class="marker">Alice</span>
-                <span class="text">Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Nunc nulla. Ut tincidunt tincidunt erat. Aenean imperdiet. Vivamus laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
-              </p>
-              <p class="message pull-left">
-                <span class="time pull-right">12:45:13</span>
-                <span class="marker">Alice</span>
-                <span class="text">Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Nunc nulla. Ut tincidunt tincidunt erat. Aenean imperdiet. Vivamus laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
-              </p>
-              <p class="message pull-right">
-                <span class="time pull-left">12:45:13</span>
-                <span class="marker">Alice</span>
-                <span class="text">Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Nunc nulla. Ut tincidunt tincidunt erat. Aenean imperdiet. Vivamus laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
-              </p>
-              <p class="message event">
-                <span class="time">12:45:13</span>
-                <span class="marker">Alice</span> присоеденился к чату
-              </p>
-              <p class="message event">
-                <span class="time">12:45:13</span>
-                <span class="marker">Alice</span> покинул чат
-              </p>
-            </div>
+            <div id="history"></div>
             <div class="input-group">
               <textarea rows="3" id="message-text" type="text" class="form-control" placeholder="Текст сообщения..."></textarea>
               <span class="input-group-btn">

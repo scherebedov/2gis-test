@@ -14,13 +14,9 @@
       <div class="panel panel-primary">
         <div class="panel-heading"><h3>Вход</h3></div>
         <div class="panel-body">
-          <div class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span>
-            К сожалению, этот ник уже занят, пожалуйста, выберите другой псевдоним.
-          </div>
+          <div id="error-place"></div>
           <div class="input-group">
-            <input id="nick-name" type="text" class="form-control" placeholder="Пожалуйста, введите ваш псевдоним..">
+            <input id="user-name" type="text" class="form-control" placeholder="Пожалуйста, введите ваш псевдоним..">
           <span class="input-group-btn">
             <button id="login" class="btn btn-default" type="button">Вход</button>
           </span>
@@ -29,7 +25,7 @@
       </div>
     </div>
   </div>
-  <div id="meeting-page">
+  <div id="meeting-page" class="">
     <div class="panel panel-primary">
       <div class="panel-heading"><h3>Чат</h3></div>
       <div class="panel-body">
@@ -45,25 +41,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <ul id="user-list" class="list-group">
-              <li class="list-group-item">Alice</li>
-              <li class="list-group-item">Pinky</li>
-              <li class="list-group-item">Rainbowdash</li>
-              <li class="list-group-item">Bob</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
-              <li class="list-group-item">Vincent</li>
+
             </ul>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
