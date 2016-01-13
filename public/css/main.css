@@ -1,0 +1,133 @@
+.element-hidden {
+  display: none;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+#welcome-page {
+  margin-top: 150px;
+}
+
+#welcome-page h3{
+  margin-top: 10px;
+}
+
+#meeting-page {
+  margin-top: 10px;
+}
+
+#meeting-page #message-text{
+  resize: none;
+}
+
+#meeting-page #send-message {
+  height: 74px;
+}
+
+#meeting-page #user-list {
+  overflow: auto;
+  height: 450px;
+}
+
+#meeting-page #user-list li{
+  padding: 5px 10px;
+}
+
+#meeting-page #history {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 371px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#meeting-page hr {
+  margin: 0 0 10px 0;
+}
+
+#meeting-page .panel-body {
+  padding: 5px 15px 0 15px;
+}
+
+#meeting-page .message {
+  max-width: 75%;
+  border-radius: 4px;
+  padding: 1px 3px;
+  margin: 4px;
+  margin-bottom: 0;
+}
+
+#meeting-page .message.event {
+  float: left !important;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0;
+  padding: 1px 3px;
+  margin: 4px;
+  margin-bottom: 0;
+}
+
+#meeting-page .message .marker{
+  font-weight: bold;
+}
+
+#meeting-page .message.pull-right {
+  background: rgba(51, 146, 228, .5);
+}
+
+#meeting-page .message.pull-right .time {
+  margin-left: -60px;
+}
+
+#meeting-page .message.pull-left {
+  background: rgba(174, 174, 174, .5);
+
+}
+
+#meeting-page .message.pull-left .time {
+  margin-right: -60px;
+}
+
+#meeting-page .message .time {
+  background: #fff;
+  font-weight: 500 !important;
+  color: #bbb;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #777777;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dddddd;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #555555;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

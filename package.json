@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/scherebedov/test.git"
+  },
+  "author": "Sergey Cherebedov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scherebedov/test/issues"
+  },
+  "homepage": "https://github.com/scherebedov/test#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.4.4"
+  }
+}
