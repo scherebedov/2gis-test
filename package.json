@@ -8,11 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/scherebedov/test.git"
+    "url": "git+git@github.com:test-work-2gis/test.git"
   },
   "author": "Sergey Cherebedov",
   "license": "ISC",
-  "homepage": "https://github.com/scherebedov/test#readme",
   "dependencies": {
     "express": "^4.13.3",
     "ws": "^1.0.1"
