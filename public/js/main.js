@@ -7,6 +7,8 @@
       };
       str = replaceAll(str, '<', '&lt;');
       str = replaceAll(str, '>', '&gt;');
+      str = replaceAll(str, '"', '&ldquo;');
+      str = replaceAll(str, '\'', '&lsquo;');
       return str;
     };
     var setUsers = function(users) {

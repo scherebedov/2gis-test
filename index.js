@@ -54,6 +54,8 @@ var xss = function(str) {
   };
   str = replaceAll(str, '<', '&lt;');
   str = replaceAll(str, '>', '&gt;');
+  str = replaceAll(str, '"', '&ldquo;');
+  str = replaceAll(str, '\'', '&lsquo;');
   return str;
 };
 
