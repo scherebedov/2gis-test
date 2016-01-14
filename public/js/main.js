@@ -211,6 +211,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   };
                 }
                 else {
+                  socket = new WebSocket('ws://127.0.0.1:9000');
                   ui.error("К сожалению, в настоящий момент этот псевдоним занят, пожалуйста, введите другой псевдоним или зайдите позже.");
                 }
                 break;

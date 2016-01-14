@@ -9,7 +9,9 @@ app.get('*', function(req,res) {
   res.status(404).send('Такой страницы не существует, перейдите на <a href="/">главную</a>');
 });
 
-app.listen(8090);
+app.listen(8090, function(){
+  console.log('Open http://127.0.0.1:8090/');
+});
 
 var History = function() {
   var hist = {};

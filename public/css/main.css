@@ -89,7 +89,7 @@
 }
 
 #meeting-page .message.pull-right .time {
-  margin-left: -55px;
+  margin-left: -60px;
 }
 
 #meeting-page .message.pull-left {
@@ -98,7 +98,7 @@
 }
 
 #meeting-page .message.pull-left .time {
-  margin-right: -55px;
+  margin-right: -60px;
 }
 
 #meeting-page .message .time {
