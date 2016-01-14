@@ -127,19 +127,21 @@ webSocketServer.on('connection', function(ws) {
 
   ws.on('close', function() {
     delete clients[id];
-    var leaveUserName = clientsNames[id];
-    history.delUser(leaveUserName);
-    delete clientsNames[id];
-    for (var key in clients) {
-      var userList = clientsNames.reduce(function(o, v, i) {
-        o[i] = xss(v);
-        return o;
-      }, {});
-      clients[key].send(JSON.stringify({
-        type: 'leaveUser',
-        data: xss(leaveUserName),
-        users: userList
-      }));
+    if (clientsNames[id] != undefined && clientsNames[id].length > 0) {
+      var leaveUserName = clientsNames[id];
+      history.delUser(leaveUserName);
+      delete clientsNames[id];
+      for (var key in clients) {
+        var userList = clientsNames.reduce(function(o, v, i) {
+          o[i] = xss(v);
+          return o;
+        }, {});
+        clients[key].send(JSON.stringify({
+          type: 'leaveUser',
+          data: xss(leaveUserName),
+          users: userList
+        }));
+      }
     }
   });
 });
