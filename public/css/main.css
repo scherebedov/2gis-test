@@ -28,6 +28,7 @@
 
 #meeting-page #user-list {
   overflow: auto;
+  overflow-x: hidden;
   height: 450px;
 }
 
@@ -42,6 +43,9 @@
   margin-bottom: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+#meeting-page #history .row {
+  margin: 0;
 }
 
 #meeting-page hr {
@@ -75,12 +79,17 @@
   font-weight: bold;
 }
 
+#meeting-page .message img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
 #meeting-page .message.pull-right {
   background: rgba(51, 146, 228, .5);
 }
 
 #meeting-page .message.pull-right .time {
-  margin-left: -60px;
+  margin-left: -55px;
 }
 
 #meeting-page .message.pull-left {
@@ -89,7 +98,7 @@
 }
 
 #meeting-page .message.pull-left .time {
-  margin-right: -60px;
+  margin-right: -55px;
 }
 
 #meeting-page .message .time {
@@ -103,12 +112,12 @@
   height: 7px;
 }
 ::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 ::-webkit-scrollbar-thumb {
   background: #777777;
-  border: 0px none #ffffff;
+  border: 0 none #ffffff;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -119,7 +128,7 @@
 }
 ::-webkit-scrollbar-track {
   background: #ffffff;
-  border: 0px none #ffffff;
+  border: 0 none #ffffff;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-track:hover {

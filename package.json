@@ -12,9 +12,6 @@
   },
   "author": "Sergey Cherebedov",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/scherebedov/test/issues"
-  },
   "homepage": "https://github.com/scherebedov/test#readme",
   "dependencies": {
     "express": "^4.13.3",
